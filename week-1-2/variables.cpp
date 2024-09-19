@@ -2,11 +2,19 @@
 #include <vector>
 #include <string>
 
+//Version 1
 struct Person {
     std::string name;
     int age;
     float height;
   };
+
+//Version 2
+struct {
+    std::string name, subject;
+    float height;
+    std::string school;
+  } Student, Teacher;
 
 int main() {
   int myInt = 1;
