@@ -17,7 +17,7 @@ struct Item {
 
 struct Character {
   std::string name;
-  std::vector <Item> items;
+  std::vector<Item> items;
   int health, maxHealth = 100, level, experience, attack, defense;
 };
 

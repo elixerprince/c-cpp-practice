@@ -12,10 +12,10 @@ struct Character {
   CharacterType type;
   std::string name;
   int healthPoints[5];
-  std::vector <std::string> abilities;
+  std::vector<std::string> abilities;
 };
 
-void printCharacter(const Character& character) {
+void printCharacter(const Character &character) {
   switch (character.type) {
     case Knight:
       std::cout << "Character Type: Knight" << std::endl;
@@ -32,7 +32,7 @@ void printCharacter(const Character& character) {
     std::cout << hp << " ";
   }
   std::cout << "\nCharacter Abilities: ";
-  for (const std::string& ability : character.abilities) {
+  for (const std::string &ability : character.abilities) {
     std::cout << ability << " ";
   }
 }

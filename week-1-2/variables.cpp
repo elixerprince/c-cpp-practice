@@ -23,7 +23,7 @@ int main() {
   bool myBool = true;
   std::string myString = "Daniel Leith";
   char myArray[] = {'A', 'B', 'C', 'D', 'E'};
-  std::vector <std::string> myVector = {"one", "two", "three"};
+  std::vector<std::string> myVector = {"one", "two", "three"};
 
   std::cout << "This is my integer: " << myInt << std::endl;
   std::cout << "This is my float: " << myFloat << std::endl;
