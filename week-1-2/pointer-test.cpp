@@ -1,18 +1,21 @@
 #include <iostream>
 
-int myInt = 1;
+void printInt(int &myInt);
+void increment(int &myInt);
 
-void printInt() {
+int main() {
+  int myInt = 1;
+
+  increment(myInt);
+  printInt(myInt);
+
+  return 0;
+}
+
+void printInt(int &myInt) {
   std::cout << "This is my integer: " << myInt << std::endl;
 }
 
-void increment(int myInt) {
+void increment(int &myInt) {
   myInt++;
-}
-
-int main() {
-  increment(myInt);
-  printInt();
-
-  return 0;
 }

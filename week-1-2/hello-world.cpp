@@ -1,9 +1,8 @@
-//My first C++ program
+// My first C++ program to refresh my memory on C++ programming
 #include <iostream>
-using namespace std;
 
 int main() {
-  cout << "Hello World!";
+  std::cout << "Hello World!";
 
   return 0;
 }

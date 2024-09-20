@@ -2,28 +2,22 @@
 #include <string>
 #include <cmath>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-
-string name; //This is apart of the std namespace
-double num1, num2, result;
-
 int main() {
-  cout << "What is your full name?" << endl;
-  getline(
-    cin, name);
-  cout << "\nEnter two numbers to be multiplied! " << endl;
-  cout << "What is your first number?" << endl;
-  cin >> num1;
-  cout << "What is your second number?" << endl;
-  cin >> num2;
+  std::string name;
+  double num1, num2, result;
+
+  std::cout << "What is your full name?" << std::endl;
+  getline(std::cin, name);
+  std::cout << "\nEnter two numbers to be multiplied! " << std::endl;
+  std::cout << "What is your first number?" << std::endl;
+  std::cin >> num1;
+  std::cout << "What is your second number?" << std::endl;
+  std::cin >> num2;
 
   result = num1 * num2;
   
-  cout << "\nHello " << name << "." << endl; 
-  cout << "\nThe result of multiplying the numbers you entered is " << result << endl;
+  std::cout << "\nHello " << name << "." << std::endl; 
+  std::cout << "\nThe result of multiplying the numbers you entered is " << result << std::endl;
 
   return 0;
 } 

@@ -1,21 +1,18 @@
 #include <iostream>
 
-using std::cout;
-using std::endl;
-
 int main() {
-  const int arraySize = 5;
-  int Grades[arraySize] = {89, 84, 91, 75, 32};
+  const int ARRAY_SIZE = 5;
+  int grades[ARRAY_SIZE] = {89, 84, 91, 75, 32};
 
-  cout << "\nGrades using normal for loop: " << endl;
+  std::cout << "\nGrades using normal for loop: " << std::endl;
 
-  for (int i = 0; i < arraySize; i++)
-    cout << "Grades[" << i << "] = " << Grades[i] << "\n" << endl;
+  for (int i = 0; i < ARRAY_SIZE; i++)
+    std::cout << "Grades[" << i << "] = " << grades[i] << "\n" << std::endl;
 
-  cout << "\nGrades using range-based for loop: " << endl;
+  std::cout << "\nGrades using range-based for loop: " << std::endl;
 
-  for (int i : Grades)
-    cout << "Grades[" << i << "] = " << i << "\n" << endl;
+  for (int i : grades)
+    std::cout << "Grades[" << i << "] = " << i << "\n" << std::endl;
 
   return 0;
 }
