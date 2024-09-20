@@ -32,8 +32,8 @@ void printCharacter(const Character& character) {
     std::cout << hp << " ";
   }
   std::cout << "\nCharacter Abilities: ";
-  for (int i = 0; i < character.abilities.size(); i++) {
-    std::cout << character.abilities[i] << " ";
+  for (const std::string& ability : character.abilities) {
+    std::cout << ability << " ";
   }
 }
 
@@ -52,4 +52,4 @@ int main() {
   printCharacter(player1);
 
   return 0;
-} 
+}
