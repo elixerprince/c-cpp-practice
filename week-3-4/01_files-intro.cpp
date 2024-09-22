@@ -7,7 +7,7 @@ int main() {
     File << "Hello, World!";
     File.close();
 
-    std::ofstream HiddenFile(".01-hidden-file.txt");
+    std::ofstream HiddenFile("01-hidden-file.txt");
     HiddenFile << "Hello, World!\n\n" << "This is a hidden file.";
     HiddenFile.close();
 
@@ -19,7 +19,7 @@ int main() {
     }
     ReadFile.close();
 
-    std::ifstream ReadHiddenFile(".01-hidden-file.txt");
+    std::ifstream ReadHiddenFile("01-hidden-file.txt");
     std::string lineHidden;
 
     while (getline (ReadHiddenFile, lineHidden)) {
