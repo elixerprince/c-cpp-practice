@@ -37,7 +37,7 @@ struct Structure {
 };
 
 void myFunction() {
-  std::cout << "This is a function." << std::endl;
+  std::cout << "This is a function.\n";
 }
 
 int increment(int number) {
@@ -52,7 +52,7 @@ class Class {
   int myInteger = 5;
   public:
     void getInteger() {
-      std::cout << myInteger << std::endl;
+      std::cout << myInteger << '\n';
     }
 
     int setInteger(int number) {
@@ -65,7 +65,7 @@ class ChildClass : public Class {
   int myChildInteger = 10;
   public:
     void getChildInteger() {
-      std::cout << myChildInteger << std::endl;
+      std::cout << myChildInteger << '\n';
     }
 
     int setChildInteger(int number) {
@@ -79,16 +79,16 @@ int main() {
   bool isBoolean = true;
 
   if (isBoolean == myVariables.myBoolean) {
-    std::cout << "This is true." << std::endl;
+    std::cout << "This is true.\n";
   } else {
-    std::cout << "This is false." << std::endl;
+    std::cout << "This is false.\n";
   }
 
   for (int i; i < 5; i++) {
     for (int j = 0; j < 5; j++) {
       std::cout << myVariables.myMultiArray[i][j] << " ";
     }
-    std::cout << std::endl;
+    std::cout << '\n';
   }
 
   while (isBoolean) {

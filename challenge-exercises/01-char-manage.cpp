@@ -3,9 +3,9 @@
 #include <vector>
 
 enum CharacterType {
-  Knight,
-  Wizard,
-  Archer
+  KNIGHT,
+  WIZARD,
+  ARCHER
 };
 
 struct Character {
@@ -17,16 +17,16 @@ struct Character {
 
 void printCharacter(const Character &character) {
   switch (character.type) {
-    case Knight:
-      std::cout << "Character Type: Knight" << std::endl;
+    case KNIGHT:
+      std::cout << "Character Type: Knight\n";
       break;
-    case Wizard:
-      std::cout << "Character Type: Wizard" << std::endl;
+    case WIZARD:
+      std::cout << "Character Type: Wizard\n";
       break;
-    case Archer:
-      std::cout << "Character Type: Archer" << std::endl;
+    case ARCHER:
+      std::cout << "Character Type: Archer\n";
   }
-  std::cout << "Character Name: " << character.name << std::endl;
+  std::cout << "Character Name: " << character.name << '\n';
   std::cout << "Character HP: ";
   for (int hp : character.healthPoints) {
     std::cout << hp << " ";
@@ -38,18 +38,18 @@ void printCharacter(const Character &character) {
 }
 
 int main() {
-  Character player1;
+  Character character1;
 
-  player1.type = Knight;
-  player1.name = "Sir Lancelot";
-  player1.healthPoints[0] = 100;
-  player1.healthPoints[1] = 95;
-  player1.healthPoints[2] = 80;
-  player1.healthPoints[3] = 95;
-  player1.healthPoints[4] = 72;
-  player1.abilities = {"Slash", "Block", "Charge"};
+  character1.type = KNIGHT;
+  character1.name = "Sir Lancelot";
+  character1.healthPoints[0] = 100;
+  character1.healthPoints[1] = 95;
+  character1.healthPoints[2] = 80;
+  character1.healthPoints[3] = 95;
+  character1.healthPoints[4] = 72;
+  character1.abilities = {"Slash", "Block", "Charge"};
 
-  printCharacter(player1);
+  printCharacter(character1);
 
   return 0;
 }

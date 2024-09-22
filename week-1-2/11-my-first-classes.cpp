@@ -6,20 +6,20 @@ class Fruit {
     std::string name;
     Fruit(std::string name = "unknown") {
       this->name = name;
-      std::cout << "A fruit was created." << std::endl;
+      std::cout << "A fruit was created.\n";
     }
 };
 
 class Apple : public Fruit {
   public:
     Apple() : Fruit("apple") {
-      std::cout << "An apple was created." << std::endl;
+      std::cout << "An apple was created.\n";
     }
 };
 
 int main() {
   Fruit fruit1("apple");
-  std::cout << "The name of the fruit is " << fruit1.name << "." << std::endl;
+  std::cout << "The name of the fruit is " << fruit1.name << ".\n";
   
   return 0;
 }

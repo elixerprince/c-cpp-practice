@@ -9,13 +9,13 @@ class Car {
   public:
     Car() {
       // Constructors have no return value
-      std::cout << "Car object created" << std::endl;
+      std::cout << "Car object created\n"; // Avoid using std::endl as it flushes the buffer and greatly slows down the program
     }
 
     void getCarInfo() {
-      std::cout << "Speed: " << speed << std::endl;
-      std::cout << "Gear: " << gear << std::endl;
-      std::cout << "Color: " << color << std::endl;
+      std::cout << "Speed: " << speed << '\n';
+      std::cout << "Gear: " << gear << '\n';
+      std::cout << "Color: " << color << '\n';
     }
 
     void setCarColor(std::string c) {
@@ -39,7 +39,7 @@ class Tesla : public Car {
 
   public:
     Tesla() {
-      std::cout << "Tesla object created" << std::endl;
+      std::cout << "Tesla object created\n";
     }
 
     Tesla(int s, int g, std::string c) {
@@ -49,9 +49,9 @@ class Tesla : public Car {
     }
     
     void getCarInfo() {
-      std::cout << "Tesla Speed: " << speed << std::endl;
-      std::cout << "Tesla Gear: " << gear << std::endl;
-      std::cout << "Tesla Color: " << color << std::endl;
+      std::cout << "Tesla Speed: " << speed << '\n';
+      std::cout << "Tesla Gear: " << gear << '\n';
+      std::cout << "Tesla Color: " << color << '\n';
     }
 };
 

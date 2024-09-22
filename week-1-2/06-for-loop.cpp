@@ -4,15 +4,15 @@ int main() {
   const int ARRAY_SIZE = 5;
   int grades[ARRAY_SIZE] = {89, 84, 91, 75, 32};
 
-  std::cout << "\nGrades using normal for loop: " << std::endl;
+  std::cout << "\nGRADES USING NORMAL FOR LOOP:\n";
 
   for (int i = 0; i < ARRAY_SIZE; i++)
-    std::cout << "Grades[" << i << "] = " << grades[i] << "\n" << std::endl;
+    std::cout << "Grades[" << i << "] = " << grades[i] << "\n\n";
 
-  std::cout << "\nGrades using range-based for loop: " << std::endl;
+  std::cout << "\nGRADES USING RANGE-BASED FOR LOOP:\n";
 
   for (int i : grades)
-    std::cout << "Grades[" << i << "] = " << i << "\n" << std::endl;
+    std::cout << "Grades[" << i << "] = " << i << "\n\n";
 
   return 0;
 }

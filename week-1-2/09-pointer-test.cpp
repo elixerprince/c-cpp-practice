@@ -13,7 +13,7 @@ int main() {
 }
 
 void printInt(int &myInt) {
-  std::cout << "This is my integer: " << myInt << std::endl;
+  std::cout << "This is my integer: " << myInt << '\n';
 }
 
 void increment(int &myInt) {

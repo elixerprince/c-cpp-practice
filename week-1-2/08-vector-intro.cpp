@@ -6,7 +6,7 @@ int main() {
   std::string myArray2[5] = {"one", "two", "three", "four", "five"};
   std::vector<int> myVector; //? Resizable array
 
-  std::cout << myArray1[1] << std::endl;
+  std::cout << myArray1[1] << '\n';
   std::cout <<  myArray2[3];
 
   return 0;

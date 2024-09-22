@@ -4,7 +4,7 @@ void printHello2();
 void printString(std::string str);
 
 void printHello1() {
-  std::cout << "Hello, World!" << std::endl;
+  std::cout << "Hello, World!\n";
 }
 
 int main() {
@@ -17,9 +17,9 @@ int main() {
 }
 
 void printHello2() {
-  std::cout << "\nHello, World!" << std::endl;
+  std::cout << "\nHello, World!\n";
 }
 
 void printString(std::string str) {
-  std::cout << str << std::endl;
+  std::cout << str << '\n';
 }
